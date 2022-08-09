@@ -7,5 +7,26 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: 1234
-      POSTGRES_USER: 'app'
-      POSTGRES_DB: 'flask'
+      POSTGRES_USER: app
+      POSTGRES_DB: flask
+
+#version: '3.9'
+#
+#networks:
+#  dev_network:
+#
+#services:
+#
+#  db:
+#    image: postgres:13.4
+#    ports:
+#      - "5432:5432"
+#    environment:
+#      POSTGRES_USER: app
+#      POSTGRES_PASSWORD: 1234
+#      POSTGRES_DB: flask
+#
+#    networks:
+#      dev_network:
+#        aliases:
+#          - db-main
